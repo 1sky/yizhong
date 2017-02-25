@@ -1,0 +1,551 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  font-family: "微软雅黑";
+  border: 0px;
+}
+
+* {
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+}
+
+.iconfont {
+  font-family: 'iconfont';
+}
+
+ul, li, ol, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 109.86667px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 341.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 384px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 426.66667px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .header {
+  width: 100%;
+  height: 0.5rem;
+  background: #C90203;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.container .header .header-left {
+  width: auto;
+  height: auto;
+  float: left;
+  clear: both;
+  margin-left: 0.1rem;
+  overflow: hidden;
+}
+
+.container .header .header-left img {
+  height: 0.44rem;
+  margin-top: 0.03rem;
+  float: left;
+}
+
+.container .header .header-left p {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #fff;
+  font-size: 18px;
+  float: left;
+}
+
+.container .header .header-right {
+  width: auto;
+  height: 100%;
+  float: right;
+  padding: 0.15rem 0rem;
+}
+
+.container .header .header-right .list-a, .container .header .header-right .list-b, .container .header .header-right .list-c {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  line-height: 0.2rem;
+  color: #FFFFFF;
+  padding: 0rem 0.15rem;
+  float: left;
+  border-right: 1px solid #fff;
+  font-size: 18px;
+}
+
+.container .header .header-right .list-c {
+  border-right: 0px;
+}
+
+.container .header .header-right .iconfont {
+  width: auto;
+  height: 100%;
+  line-height: 0.2rem;
+  color: #fff;
+  float: left;
+  font-size: 35px;
+}
+
+.container .header .header-right .iconfont .nav {
+  width: 1.8rem;
+  background: #A00304;
+  position: absolute;
+  right: -100%;
+  top: 0.5rem;
+  opacity: 0.8;
+  padding-top: 0.6rem;
+  transition: all 1s;
+}
+
+.container .header .header-right .iconfont .nav .nav-a {
+  width: 100%;
+  height: 0.4rem;
+  border-bottom: 1px solid #C70203;
+  text-align: center;
+}
+
+.container .header .header-right .iconfont .nav .nav-a a {
+  color: #fff;
+  line-height: 0.4rem;
+  font-size: 20px;
+}
+
+.container .header .header-right .iconfont .nav .nav-b {
+  width: 1.4rem;
+  height: 0.4rem;
+  border: 2px solid #fff;
+  margin-top: 0.2rem;
+  margin-left: -0.4rem;
+  background: #A00304;
+  text-align: center;
+}
+
+.container .header .header-right .iconfont .nav .nav-b a {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 0.36rem;
+}
+
+.container .banner {
+  width: 100%;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+.container .banner img {
+  width: 100%;
+}
+
+.container .zixun {
+  width: 100%;
+  height: 1.4rem;
+  overflow: hidden;
+  padding: 0.05rem;
+  margin-top: 0.15rem;
+}
+
+.container .zixun .left {
+  width: 20%;
+  height: 80%;
+  background: #BE0000;
+  float: left;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 0.4rem;
+  padding-top: 0.05rem;
+}
+
+.container .zixun .right {
+  width: 75%;
+  height: 1.3rem;
+  margin-left: 5%;
+  float: left;
+  font-size: 14px;
+}
+
+.container .zixun .right .right-a {
+  color: #C90203;
+}
+
+.container .zixun .right .right-b {
+  margin-top: 0.05rem;
+}
+
+.container .zixun .right .right-b .a {
+  color: #353535;
+}
+
+.container .zixun .right .right-b .b a {
+  color: #C90203;
+}
+
+.container .ye {
+  width: 100%;
+  height: auto;
+}
+
+.container .ye .list {
+  width: 100%;
+  height: 1.8rem;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.container .ye .list .left {
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.container .ye .list .left .img {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .ye .list .left .img img {
+  width: 100%;
+}
+
+.container .ye .list .right {
+  width: 55%;
+  height: 100%;
+  float: left;
+  padding: 0.05rem;
+}
+
+.container .ye .list .right .right-a {
+  color: #C90203;
+  margin-top: 0.2rem;
+}
+
+.container .ye .list .right .right-b {
+  margin-top: 0.1rem;
+}
+
+.container .ye .list .right .right-b .a {
+  color: #404040;
+  font-size: 12px;
+}
+
+.container .ye .list .right .right-b .b a {
+  color: #C90203;
+  font-size: 12px;
+  text-align: right;
+}
+
+.container .next {
+  width: 100%;
+  height: 0.3rem;
+  overflow: hidden;
+  margin-top: 0.1rem;
+}
+
+.container .next .next-a {
+  width: 40%;
+  height: 0.3rem;
+  overflow: hidden;
+  float: left;
+}
+
+.container .next .next-a div {
+  width: 0.8rem;
+  height: 0.3rem;
+  background: #AAAAAA;
+  text-align: center;
+  line-height: 0.3rem;
+  color: #fff;
+  float: right;
+}
+
+.container .next .next-b {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.container .next .next-b div {
+  width: 100%;
+  height: 0.3rem;
+  text-align: center;
+  line-height: 0.3rem;
+  color: black;
+}
+
+.container .next .next-c {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.container .next .next-c div {
+  width: 0.8rem;
+  height: 0.3rem;
+  background: #AAAAAA;
+  text-align: center;
+  line-height: 0.3rem;
+  color: #fff;
+  float: left;
+}
+
+.container .xuanze {
+  width: 100%;
+  height: 0.3rem;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.container .xuanze .xuanze-a {
+  width: 1.5rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.3rem;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  margin-top: 0.15rem;
+}
+
+.container .xuanze .xuanze-a .a {
+  font-size: 20px;
+  color: #D32121;
+}
+
+.container .xuanze .xuanze-a .b {
+  font-size: 20px;
+  color: black;
+}
+
+.container .product {
+  width: 100%;
+  height: 1.2rem;
+  padding: 0.05rem;
+  overflow: hidden;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.container .product .product-a {
+  width: 30%;
+  height: 1.2rem;
+  border: 1px solid #D3D3D3;
+  float: left;
+  position: relative;
+}
+
+.container .product .product-a .kuang {
+  width: 100%;
+  height: 0.3rem;
+  background: #D62122;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container .product .product-a .im {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .product .product-a img {
+  width: 100%;
+}
+
+.container .product .product-b {
+  width: 30%;
+  height: 1.2rem;
+  border: 1px solid #D3D3D3;
+  float: left;
+  margin-left: 5%;
+  position: relative;
+}
+
+.container .product .product-b .kuang {
+  width: 100%;
+  height: 0.3rem;
+  background: #D62122;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container .product .product-b .im {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .product .product-b img {
+  width: 100%;
+}
+
+.container .footer {
+  width: 100%;
+  height: 0.9rem;
+  background: #C90203;
+  padding-top: 0.08rem;
+}
+
+.container .footer .footer-a {
+  width: 100%;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 0.05rem;
+  clear: both;
+  font-size: 14px;
+}
+
+.container .footer .footer-b {
+  width: auto;
+  height: 0.2rem;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.04rem;
+}
+
+.container .footer .footer-b a {
+  color: #FFFFFF;
+  line-height: 0.2rem;
+  padding: 0rem 0.1rem;
+  font-size: 14px;
+  border-right: 1px solid #fff;
+}
+
+.container .footer .footer-b .foo {
+  border-right: 0;
+}

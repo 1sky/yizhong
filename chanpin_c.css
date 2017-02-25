@@ -1,0 +1,739 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  font-family: "微软雅黑";
+  border: 0px;
+}
+
+ul, li, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  outline: none;
+}
+
+* {
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+}
+
+.iconfont {
+  font-family: 'iconfont';
+}
+
+ul, li, ol, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 109.86667px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 341.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 384px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 426.66667px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .header {
+  width: 100%;
+  height: 0.5rem;
+  background: #C90203;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.container .header .header-left {
+  width: auto;
+  height: auto;
+  float: left;
+  clear: both;
+  margin-left: 0.1rem;
+  overflow: hidden;
+}
+
+.container .header .header-left img {
+  height: 0.44rem;
+  margin-top: 0.03rem;
+  float: left;
+}
+
+.container .header .header-left p {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  line-height: 0.5rem;
+  color: #fff;
+  font-size: 18px;
+  float: left;
+}
+
+.container .header .header-right {
+  width: auto;
+  height: 100%;
+  float: right;
+  padding: 0.15rem 0rem;
+}
+
+.container .header .header-right .list-a, .container .header .header-right .list-b, .container .header .header-right .list-c {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  line-height: 0.2rem;
+  color: #FFFFFF;
+  padding: 0rem 0.15rem;
+  float: left;
+  border-right: 1px solid #fff;
+  font-size: 18px;
+}
+
+.container .header .header-right .list-c {
+  border-right: 0px;
+}
+
+.container .header .header-right .iconfont {
+  width: auto;
+  height: 100%;
+  line-height: 0.2rem;
+  color: #fff;
+  float: left;
+  font-size: 35px;
+}
+
+.container .header .header-right .iconfont .nav {
+  width: 1.8rem;
+  height: 6rem;
+  background: #A00304;
+  position: absolute;
+  right: -100%;
+  top: 0.5rem;
+  opacity: 0.9;
+  padding-top: 0.6rem;
+  transition: all 1s;
+  z-index: 5;
+}
+
+.container .header .header-right .iconfont .nav .nav-a {
+  width: 100%;
+  height: 0.4rem;
+  border-bottom: 1px solid #C70203;
+  text-align: center;
+}
+
+.container .header .header-right .iconfont .nav .nav-a a {
+  color: #fff;
+  line-height: 0.4rem;
+  font-size: 20px;
+}
+
+.container .header .header-right .iconfont .nav .nav-b {
+  width: 1.4rem;
+  height: 0.4rem;
+  border: 2px solid #fff;
+  margin-top: 0.2rem;
+  margin-left: -0.4rem;
+  background: #A00304;
+  text-align: center;
+}
+
+.container .header .header-right .iconfont .nav .nav-b a {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 0.36rem;
+}
+
+.container .footer {
+  width: 100%;
+  height: 0.9rem;
+  background: #C90203;
+  padding-top: 0.08rem;
+}
+
+.container .footer .footer-a {
+  width: 100%;
+  height: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 0.05rem;
+  clear: both;
+  font-size: 15px;
+}
+
+.container .footer .footer-b {
+  width: auto;
+  height: 0.2rem;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.04rem;
+}
+
+.container .footer .footer-b a {
+  color: #FFFFFF;
+  line-height: 0.2rem;
+  padding: 0rem 0.1rem;
+  font-size: 15px;
+  border-right: 1px solid #fff;
+}
+
+.container .footer .footer-b .foo {
+  border-right: 0;
+}
+
+.container .banner {
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+}
+
+.container .banner img {
+  width: 100%;
+}
+
+.container .item {
+  width: 100%;
+  height: auto;
+}
+
+.container .item .item-a {
+  width: 100%;
+  height: 0.3rem;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+
+.container .item .item-a .a {
+  width: 15%;
+  height: 0.15rem;
+  float: left;
+  border-top: 0.01rem solid black;
+  border-right: 0.01rem solid black;
+  margin-top: 0.149rem;
+}
+
+.container .item .item-a .b {
+  width: 70%;
+  height: 0.3rem;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.container .item .item-a .b .gang-a {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: black;
+  bottom: 0;
+  left: 0;
+}
+
+.container .item .item-a .b .gang-b {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: black;
+  top: 0;
+  right: 0;
+}
+
+.container .item .item-a .b .bb {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.3rem;
+}
+
+.container .item .item-a .b .aa {
+  color: #E20000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0.3rem;
+}
+
+.container .item .item-a .c {
+  width: 15%;
+  height: 0.15rem;
+  float: left;
+  border-left: 0.01rem solid black;
+  border-bottom: 0.01rem solid black;
+}
+
+.container .item .item-b {
+  width: 100%;
+  height: auto;
+  padding: 0rem 0.05rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+
+.container .item .item-b .left {
+  width: 40%;
+  height: 100%;
+  border-bottom: 1px solid #BF0000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.container .item .item-b .right {
+  width: 60%;
+  height: 100%;
+  border-bottom: 1px solid black;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+
+.container .item .item-b .a {
+  color: #BF0000;
+}
+
+.container .item .item-b .b {
+  color: black;
+}
+
+.container .item .area {
+  width: 100%;
+  height: auto;
+  padding: 0.05rem;
+  word-wrap: break-word;
+  margin-top: 0.15rem;
+}
+
+.container .item .area p {
+  word-wrap: break-word;
+  color: #464646;
+}
+
+.container .item .area .img {
+  width: 100%;
+  height: 1.1rem;
+  overflow: hidden;
+}
+
+.container .item .area .img .left {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 0.2rem;
+  float: left;
+  font-size: 12px;
+}
+
+.container .item .area .img .left img {
+  width: 80%;
+}
+
+.container .item .area .img .right {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 0.2rem;
+  margin-left: 10%;
+  float: left;
+  font-size: 12px;
+}
+
+.container .item .area .img .right img {
+  width: 80%;
+}
+
+.container .item .lis {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.15rem;
+  padding: 0.05rem;
+}
+
+.container .item .lis .lis-a {
+  width: 100%;
+  height: auto;
+  background: #E5E5E5;
+  margin-top: 0.05rem;
+  line-height: 0.3rem;
+}
+
+.container .item .fuwu {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.15rem;
+}
+
+.container .item .fuwu .fuwu-a {
+  width: 50%;
+  height: 1.2rem;
+  text-align: center;
+  float: left;
+}
+
+.container .item .fuwu .fuwu-a .image {
+  width: 90%;
+  height: 0.8rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container .item .fuwu .fuwu-a .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .item .fuwu .fuwu-a p {
+  margin-top: 0.1rem;
+  color: #464646;
+}
+
+.container .item .fangzhi {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+
+.container .item .fangzhi .fangzhia {
+  width: 33.33%;
+  height: 1.3rem;
+  text-align: center;
+  float: left;
+}
+
+.container .item .fangzhi .fangzhia .fangzhi-a {
+  margin: 0 auto;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid #E70204;
+  text-align: center;
+  line-height: 0.8rem;
+}
+
+.container .item .fangzhi .fangzhia .fangzhi-a .iconfont {
+  color: #E70204;
+  font-size: 60px;
+  line-height: 0.8rem;
+}
+
+.container .item .chang {
+  color: #343434;
+  font-size: 15px;
+  margin-top: 0.04rem;
+  margin-left: 0.05rem;
+}
+
+.container .item .changjing {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0.15rem;
+}
+
+.container .item .changjing .changjing-a {
+  width: 25%;
+  height: 1rem;
+  float: left;
+}
+
+.container .item .changjing .changjing-a .jing {
+  width: 100%;
+  height: 0.7rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .item .changjing .changjing-a .jing img {
+  height: 100%;
+}
+
+.container .item .changjing .changjing-a p {
+  color: #3D3D3D;
+  text-align: center;
+}
+
+.container .item .changjing .changjing-b {
+  width: 24%;
+  height: 1rem;
+  float: left;
+  margin-left: 1%;
+}
+
+.container .item .changjing .changjing-b .jing {
+  width: 100%;
+  height: 0.7rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .item .changjing .changjing-b .jing img {
+  height: 100%;
+}
+
+.container .item .changjing .changjing-b p {
+  color: #3D3D3D;
+  text-align: center;
+}
+
+.container .item .xiala {
+  width: 100%;
+  height: 1.7rem;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin: 0.05rem;
+  position: relative;
+}
+
+.container .item .xiala p {
+  color: #C90203;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.container .item .xiala select {
+  width: 40%;
+  height: 0.2rem;
+  border: 1px solid #D3D3D3;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 0.3rem;
+  margin-top: 0.05rem;
+}
+
+.container .item .xiala .dingzhi {
+  width: 0.8rem;
+  height: 0.2rem;
+  background: #B60204;
+  text-align: center;
+  line-height: 0.2rem;
+  color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 35%;
+}
+
+.container .item .xiala .dingzhi-a {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.2rem;
+  line-height: 0.35rem;
+}
+
+.container .item .xiala .dingzhi-a .iconfont {
+  color: #DE1A1D;
+  font-size: 30px;
+}
+
+.container .item .xuanze {
+  width: 100%;
+  height: 0.3rem;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.container .item .xuanze .xuanze-a {
+  width: 1.5rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.3rem;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  margin-top: 0.15rem;
+}
+
+.container .item .xuanze .xuanze-a .a {
+  font-size: 20px;
+  color: #D32121;
+}
+
+.container .item .xuanze .xuanze-a .b {
+  font-size: 20px;
+  color: black;
+}
+
+.container .item .product {
+  width: 100%;
+  height: 1.2rem;
+  padding: 0.05rem;
+  overflow: hidden;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.container .item .product .product-a {
+  width: 30%;
+  height: 1.2rem;
+  border: 1px solid #D3D3D3;
+  float: left;
+  position: relative;
+}
+
+.container .item .product .product-a .kuang {
+  width: 100%;
+  height: 0.3rem;
+  background: #D62122;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container .item .product .product-a .im {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .item .product .product-a img {
+  width: 100%;
+}
+
+.container .item .product .product-b {
+  width: 30%;
+  height: 1.2rem;
+  border: 1px solid #D3D3D3;
+  float: left;
+  margin-left: 5%;
+  position: relative;
+}
+
+.container .item .product .product-b .kuang {
+  width: 100%;
+  height: 0.3rem;
+  background: #D62122;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container .item .product .product-b .im {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container .item .product .product-b img {
+  width: 100%;
+}

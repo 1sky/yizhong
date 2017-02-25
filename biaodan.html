@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" /> 
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimum-scale=1.0,user-scalable=no" name="viewport">
+		<title>表单</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="biaodan.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_zj86gdo3mx1rlik9.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src='js/nav.js'></script>
+	</head>
+	<body>
+		<style type="text/css">
+			#nav .nav-a a{
+				font-size: 14px;
+			}
+			#nav .nav-b a{
+				font-size: 14px;
+			}
+			#header{
+		        width: 100%;
+		        height: 100vh;
+		        position: fixed;
+		        left: 0;
+		        top: -100%;
+		        z-index: 100000;
+		        transition: all 1s;
+		    }
+		</style>
+		<div class="container">
+			<ul style="width: 100%;height: 50px;"></ul>
+			<ul class="header" style="position: fixed; top: 0; left: 0; z-index: 10000000;">
+				<li class="header-left">
+					<img src="img/logo.png" alt="" />
+					<p style="font-size: 14px;">一众电气</p>
+				</li>
+				<li class="header-right">
+					<div class="list-a"><a href="chanpin_a.html" style="color: #fff; font-size: 14px;">产品</a></div>
+					<div class="list-b"><a href="anli_a.html" style="color: #fff; font-size: 14px;">案例</a></div>
+					<div class="list-c"><a href="zhongdian_a.html" style="color: #fff; font-size: 14px;">工程</a></div>
+					<div class="iconfont nav-icon" id="swe" >&#xe605;</div>
+				</li>
+			</ul>
+			
+			<!--中间的内容-->
+			<ul class="lianxi">
+				<img src="img/biao.png" alt="" />
+				<li class="banner">
+					<ul class="top">
+						<li class="top-a">
+							<span class="a">公司</span>
+							<input type="text" name="gongsi" id="gongsi" value="" />
+						</li>
+						<li class="top-a">
+							<span class="a">姓名</span>
+							<input type="text" name="gongsi" id="gongsi" value="" />
+						</li>
+						<li class="top-a">
+							<span class="a">电话</span>
+							<input type="text" name="gongsi" id="gongsi" value="" />
+						</li>
+						<li class="top-a">
+							<span class="a">邮箱</span>
+							<input type="text" name="gongsi" id="gongsi" value="" />
+						</li>
+					</ul>
+					<ul class="bottom" >
+						<p>请在以下区域输入您的留言内容</p>
+						<textarea name="" rows="" cols=""></textarea>
+						<li class="but">
+							<div class="but-a">在线咨询</div>
+							<div class="but-b">立即提交</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+				
+			<!--<div style="width: 100%; height: 1rem;"></div>-->
+			<!--<ul class="footer">
+				<p class="footer-a">版权所有：郑州一众电气设备有限公司</p>
+				<p class="footer-a">技术支持：友联科技</p>
+				<li class="footer-b">
+					<a href="">解决方案</a>
+					<a href="">新闻资讯</a>
+					<a href="">走进一众</a>
+					<a href="" class="foo">联系一众</a>
+				</li>
+			</ul>-->
+			<div id="hehe">
+				<ul class="nav" id="r-n" >
+					<li class="nav-a"><a href="index.html">网站首页</a></li>
+					<li class="nav-a"><a href="chanpin_a.html">产品中心</a></li>
+					<li class="nav-a"><a href="jiejue_a.html">解决方案</a></li>
+					<li class="nav-a"><a href="zhongdian_a.html">重点工程</a></li>
+					<li class="nav-a"><a href="zixun.html">新闻资讯</a></li>
+					<li class="nav-a"><a href="anli_a.html">客户案例</a></li>
+					<li class="nav-a"><a href="zoujin.html">走进一众</a></li>
+					<li class="nav-a"><a href="lianxi.html">联系一众</a></li>
+					<li class="nav-a"><a href="">电脑版网站</a></li>
+					<li class="nav-b" style="margin-bottom: 0.2rem;"><a href="tel:13083660776">一键接听</a></li>
+				</ul>
+	
+				<div class="slide" style="width: 100%; height: 100%;">
+					<img src="img/zou1.png" alt="" / style="width: 100%; height: 100%;">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			var nav_a   =   $('#hehe'),
+				nav_b   =   $('#swe');
+			
+			nav_b.on('touchend',function(){
+				nav_a.css('top','0rem')
+				return false;
+			});
+			$("body").on('touchend',function(){
+				nav_a.css('top','-150%')
+			})
+		})
+	</script>	
+</html>

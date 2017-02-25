@@ -1,0 +1,412 @@
+$list:320px,360px,375px,384px,412px,414px,600px,640px,768px,800px,1280px,1440px,1600px;
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    border: 0px;
+}
+*{
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: 'iconfont';
+}
+.iconfont{
+    font-family: 'iconfont';
+}
+ul,li,ol,a{
+    text-decoration: none;
+    list-style: none;
+}
+$m:375px;
+@each $w in $list{
+    @media screen and (min-width:#{$w}){
+        html{
+            font-size: 100px * $w/$m;
+        }
+    }
+}
+
+//头部
+
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    .header{
+        width: 100%;
+        height: 0.5rem;
+        background: #C90203;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        .header-left{
+            width: auto;
+            height: auto;
+            float: left;
+            clear: both;
+            margin-left: 0.1rem;
+            overflow: hidden;
+            img{
+                height: 0.44rem;
+                margin-top: 0.03rem;
+                float: left;
+            }
+            p{
+                width: auto;
+                height: 100%;
+                text-align: center;
+                line-height: 0.5rem;
+                color: #fff;
+                font-size: 18px;
+                float: left;
+            }
+        }
+        .header-right{
+            width: auto;
+            height: 100%;
+            float: right;
+            padding: 0.15rem 0rem;
+            .list-a,.list-b,.list-c{
+                width: auto;
+                height: 100%;
+                text-align: center;
+                line-height: 0.2rem;
+                color: #FFFFFF;
+                padding: 0rem 0.15rem;
+                float: left;
+//              clear: both;
+                border-right: 1px solid #fff;
+                font-size: 18px;
+            }
+            .list-c{
+                border-right: 0px;
+            }
+            .iconfont{
+                width: auto;
+                height: 100%;
+                line-height: 0.2rem;
+                color: #fff;
+                float: left;
+                font-size: 35px;
+//              position: relative;
+                .nav{
+                    width: 1.8rem;
+//                  height: 100%;
+                    background: #A00304;
+                    position: absolute;
+                    right: -100%;
+                    top: 0.5rem;
+                    opacity: 0.8;
+                    padding-top: 0.6rem;
+                    transition: all 1s;
+                    .nav-a{
+                        width: 100%;
+                        height: 0.4rem;
+                        border-bottom: 1px solid #C70203;
+                        text-align: center;
+                        a{
+                            color: #fff;
+                            line-height: 0.4rem;
+                            font-size: 20px;
+                        }
+                    }
+                    .nav-b{
+                        width: 1.4rem;
+                        height: 0.4rem;
+                        border: 2px solid #fff;
+                        margin-top: 0.2rem;
+                        margin-left: -0.4rem;
+                        background: #A00304;
+                        text-align: center;
+                        a{
+                            color: #FFFFFF;
+                            font-size: 20px;
+                            line-height: 0.36rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        width: 100%;
+        height: 0.8rem;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .zhong{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        .zhong-a{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            line-height: 0.15rem;
+            color: #C90203;
+            font-weight: bold;
+        margin-top: 0.2rem;
+        }
+        .zhong-b{
+            display: block;
+            width: 100%;
+            height: 1.5rem;
+//          background: red;
+            margin-top: 0.05rem;
+            .one{
+                width: 25%;
+                height: 100%;
+                float: left;
+                .a{
+                    font-weight: bold;
+                    text-align: center;
+                    color: black;
+                }
+                .b{
+                    text-align: center;
+                    color: black;
+                }
+            }
+            .tow{
+                width: 30%;
+                height: 100%;
+                float: left;
+                color: #383838;
+                word-wrap: break-word;
+                text-align: center;
+                padding: 0.05rem;
+                vertical-align: middle;
+                font-size: 14px;
+                padding-top: 0.15rem;
+            }
+            .three{
+                width: 45%;
+                height: 100%;
+                float: left;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .next{
+        width: 100%;
+        height: 0.3rem;
+        overflow: hidden;
+        margin-top: 0.1rem;
+        .next-a{
+            width: 40%;
+            height: 0.3rem;
+            overflow: hidden;
+            float: left;
+            div{
+                width: 0.8rem;
+                height: 0.3rem;
+                background: #AAAAAA;
+                text-align: center;
+                line-height: 0.3rem;
+                color: #fff;
+                float: right;
+            }
+        }
+        .next-b{
+            width: 20%;
+            height: 100%;
+            overflow: hidden;
+            float: left;
+            div{
+                width: 100%;
+                height: 0.3rem;
+                text-align: center;
+                line-height: 0.3rem;
+                color: black;
+            }
+        }
+        .next-c{
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+            float: left;
+            div{
+                width: 0.8rem;
+                height: 0.3rem;
+                background: #AAAAAA;
+                text-align: center;
+                line-height: 0.3rem;
+                color: #fff;
+                float: left;
+            }
+        }
+    }
+    .xuanze{
+            width: 100%;
+            height: 0.3rem;
+            border-bottom: 1px solid black;
+            position: relative;
+//          overflow: hidden;
+            .xuanze-a{
+                width: 1.5rem;
+                height: 0.3rem;
+                margin: 0 auto;
+//              margin-top: 50%;
+                text-align: center;
+                line-height: 0.3rem;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                margin-top: 0.15rem;
+                .a{
+                    font-size: 20px;
+                    color: #D32121;
+                }
+                .b{
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    .product{
+        width: 100%;
+        height: 1.2rem;
+        padding: 0.05rem;
+        overflow: hidden;
+        margin-top: 0.2rem;
+        margin-bottom: 0.3rem;
+        .product-a{
+            width: 30%;
+            height: 1.2rem;
+            border: 1px solid #D3D3D3;
+            float: left;
+            position: relative;
+            .kuang{
+                width: 100%;
+                height: 0.3rem;
+                background: #D62122;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 0.3rem;
+                font-size: 12px;
+//                  font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .im{
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .product-b{
+            width: 30%;
+            height: 1.2rem;
+            border: 1px solid #D3D3D3;
+            float: left;
+            margin-left: 5%;
+            position: relative;
+            .kuang{
+                width: 100%;
+                height: 0.3rem;
+                background: #D62122;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 0.3rem;
+                font-size: 12px;
+//                  font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .im{
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 0.9rem;
+        background: #C90203;
+        padding-top: 0.08rem;
+        .footer-a{
+            width: 100%;
+            height: 0.22rem;
+            text-align: center;
+            line-height: 0.22rem;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 0.05rem;
+            clear: both;
+            font-size: 15px;
+        }
+        .footer-b{
+            width: auto;
+            height: 0.2rem;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 0.04rem;
+//          .foo{
+//              width: auto;
+//              height: 0.3rem;
+//              float: left;
+//              border-right: 1px solid #fff;
+                a{
+                    color: #FFFFFF;
+                    line-height: 0.2rem;
+                    padding: 0rem 0.1rem;
+                    font-size: 15px;
+//                  display: block;
+                    border-right: 1px solid #fff;
+                }
+//          }
+            .foo{
+                border-right:0;
+            }
+            
+        }
+    }
+//  .banner{
+//      width: 100%;
+//      height: 1rem;
+//      overflow: hidden;
+//      img{
+//          width: 100%;
+//      }
+//  }
+    
+    
+}
